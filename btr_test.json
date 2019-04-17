@@ -1,0 +1,94 @@
+{
+   "BagIt-Profile-Info":{
+      "BagIt-Profile-Identifier":"http://NULIB/bagprofile/btr-0_1_0.json",
+      "Source-Organization":"NU Libraries",
+      "Contact-Name":"Beyond the Repository ",
+      "Contact-Email":"IMLS-BAG-TEAM@listserv.it.northwestern.edu",
+      "External-Description":"Bag Profile for Distributed DIgital Preservation Storage Services.",
+      "Version":"1.2"
+   },
+   "Bag-Info":{
+      "Source-Organization":{
+         "required":true
+      },
+      "Bagging-Date":{
+         "required":true
+      },
+      "Payload-Oxum":{
+         "required":true
+      },
+      "Bagit-Profile-Identifier":{
+        "required":true
+      },
+      "Organization-Address":{
+         "required":false
+      },
+      "Contact-Name":{
+         "required":false
+      },
+      "Contact-Phone":{
+         "required":false
+      },
+      "Contact-Email":{
+         "required":false
+      },
+      "External-Description":{
+         "required":false
+      },
+      "External-Identifier":{
+         "required":false
+      },
+      "Bag-Group-Identifier":{
+         "required":false
+      },
+      "Bag-Count":{
+         "required":false
+      },
+      "Bag-Size":{
+         "required":false
+      },
+      "Internal-Sender-Identifier":{
+         "required":false
+      },
+      "Internal-Sender-Description":{
+         "required":false
+      },
+      "Payload-Identifier":{
+        "required":false
+      },
+      "Bag-Producing-Organization":{
+        "required":false
+      }
+   },
+   "Manifests-Required":[],
+   "Manifests-Supported":[
+      "md5", "sha1", "sha256", "sha512"
+   ],
+   "Allow-Fetch.txt":false,
+   "Serialization":"optional",
+   "Accept-Serialization":[
+    "application/zip",
+    "application/x-tar",
+    "application/gzip",
+    "application/7z"
+   ],
+   "Tag-Manifests-Required":[],
+   "Tag-Manifests-Supported":[
+     "md5", "sha1", "sha256", "sha512"
+   ],
+   "Tag-Files-Required":[],
+   "Tag-Files-Allowed":["*"],
+   "Tag-Files-Reserved":["ddp*"],
+   "Accept-BagIt-Version":[
+      "0.97", "1.0"
+   ],
+   "Bag-Producing-Organization":{
+        "required":false
+      },
+    "Data-Export-Info":{
+        "required":false
+      },
+      "Relationship-Info":{
+        "required":false
+      }
+}

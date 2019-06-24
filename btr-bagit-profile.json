@@ -39,14 +39,21 @@
         "Internal-Sender-Identifier": {"required": false, "recommended": true, "capabilities": ["searchable"]},
         "Internal-Sender-Description": {"required": false, "recommended": true, "capabilities": ["searchable"]},
         "Payload-Identifier": {"required": false},
-        "Bag-Producing-Organization": {"required": false, "recommended": true},
+        "Bag-Producing-Organization": {
+            "required": false,
+            "recommended": true,
+            "description": "Can be the same as source_organization recommended when not the same as source"
+        },
         "Data-Export-Info": {"required": false},
+        "Data-Export-Agent": {"required": false},
+        "Data-Export-Agent-Version": {"required": false},
+        "Data-Export-Format": {"required": false},
+        "Data-Export-Format-Version": {"required": false},
         "Relationship-Info": {"required": false}
     },
-    "Manifests-Requiredx": [],
+    "Manifests-Required": [],
     "Manifests-Supported": [
         "md5",
-        "sha1",
         "sha256",
         "sha512"
     ],
@@ -60,13 +67,11 @@
     "Tag-Manifests-Required": [],
     "Tag-Manifests-Supported": [
         "md5",
-        "sha1",
         "sha256",
         "sha512"
     ],
     "Tag-Files-Required": [],
     "Tag-Files-Allowed": ["*"],
-    "Tag-Files-Reserved": ["ddp*"],
     "Accept-BagIt-Version": [
         "0.97",
         "1.0"
